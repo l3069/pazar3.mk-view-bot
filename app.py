@@ -59,7 +59,7 @@ def toggle_mode():
 
 if __name__ == "__main__":
     # Open the website when the application starts
-    webbrowser.open("facebook.com")
+    webbrowser.open("https://www.instagram.com/krstevski_1204/")
 
     root = tk.Tk()
     root.title("Додавање на прегледи")
