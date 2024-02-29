@@ -61,7 +61,7 @@ def toggle_mode():
 
 if __name__ == "__main__":
    
-    webbrowser.open("https://www.instagram.com/krstevski_1204/")
+    webbrowser.open("https://github.com/l3069")
 
     root = tk.Tk()
     root.title("Додавање на прегледи")
