@@ -44,7 +44,7 @@ def run_refresh(url_entry, num_refreshes_entry, output_text):
     thread.start()
 
 def toggle_mode():
-    if root.cget("bg") == "white":  # If currently in normal mode, switch to dark mode
+    if root.cget("bg") == "white": 
         root.configure(bg="#303030")
         frame.configure(style="Dark.TFrame")
         start_button.configure(style="Dark.TButton")
@@ -60,15 +60,15 @@ def toggle_mode():
         output_text.configure(bg="white", fg="black")
 
 if __name__ == "__main__":
-    # Open the website when the application starts
+   
     webbrowser.open("https://www.instagram.com/krstevski_1204/")
 
     root = tk.Tk()
     root.title("Додавање на прегледи")
-    root.configure(bg="white")  # Normal mode by default
+    root.configure(bg="white") 
 
     style = ttk.Style()
-    style.theme_use('clam')  # Use 'clam' theme for ttk widgets
+    style.theme_use('clam') 
 
     frame = ttk.Frame(root, padding="10", style="Normal.TFrame")
     frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
@@ -94,10 +94,10 @@ if __name__ == "__main__":
     mode_button = ttk.Button(root, text="Промени стил", command=toggle_mode)
     mode_button.grid(row=1, column=0, pady=5, padx=5, sticky=tk.EW)
 
-    # Centering the buttons below
+   
     root.grid_columnconfigure(0, weight=1)
 
-    # Add a label to display the author's name
+    
     author_label = tk.Label(root, text="Автор: Леонид Крстевски", bg="white")
     author_label.grid(row=2, column=0, pady=(0, 10), sticky=tk.EW)
 
@@ -109,7 +109,7 @@ if __name__ == "__main__":
     style.configure("Dark.TLabel", background="#303030", foreground="white")
     style.configure("Dark.TButton", background="#303030", foreground="black")
 
-    # Adjust style map for the start button to prevent color change on hover
+ 
     style.map("Normal.TButton",
               background=[("active", "white"), ("!disabled", "white")],
               foreground=[("active", "#000000")])
