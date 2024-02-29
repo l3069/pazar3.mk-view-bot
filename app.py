@@ -1,5 +1,7 @@
 # Author: Leonid Krstevski
 
+# Warning: This project is not intended for any cyber disruption or illegal purposes. The author is not responsible for any misuse of this code.
+
 # Опомена: Овој проект не е наменет за било какви сајбер нарушувања или незаконски цели. Авторот не носи одговорност за било каква злоупотреба на овој код.
 
 import asyncio
@@ -96,7 +98,7 @@ if __name__ == "__main__":
     root.grid_columnconfigure(0, weight=1)
 
     # Add a label to display the author's name
-    author_label = tk.Label(root, text="Автор: Leonid Krstevski", bg="white")
+    author_label = tk.Label(root, text="Автор: Леонид Крстевски", bg="white")
     author_label.grid(row=2, column=0, pady=(0, 10), sticky=tk.EW)
 
     style.configure("Normal.TFrame", background="white")
@@ -113,4 +115,9 @@ if __name__ == "__main__":
               foreground=[("active", "#000000")])
 
     root.mainloop()
-    # Author: Leonid Krstevski
+    
+ # Author: Leonid Krstevski
+
+# Warning: This project is not intended for any cyber disruption or illegal purposes. The author is not responsible for any misuse of this code.
+
+# Опомена: Овој проект не е наменет за било какви сајбер нарушувања или незаконски цели. Авторот не носи одговорност за било каква злоупотреба на овој код.
