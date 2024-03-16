@@ -61,7 +61,7 @@ def toggle_mode():
 
 if __name__ == "__main__":
    
-    webbrowser.open("https://github.com/l3069")
+    webbrowser.open("https://krstevski-portfolio.000webhostapp.com/krstevski/index.html")
 
     root = tk.Tk()
     root.title("Додавање на прегледи")
